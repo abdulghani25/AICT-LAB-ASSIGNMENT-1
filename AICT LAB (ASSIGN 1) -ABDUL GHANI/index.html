@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>University Website</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        nav {
+            background-color: darkred;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 15px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            opacity: 0.6;
+        }
+
+        .hero {
+            height: 650px;
+            position: relative;
+        }
+
+        .hero img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .hero h1 {
+            position: absolute;
+            top: 40%;
+            width: 100%;
+            text-align: center;
+            color: white;
+            font-size: 45px;
+        }
+
+        .admission-bar {
+            background-color: darkred;
+            color: white;
+            padding: 12px;
+            overflow: hidden;
+            white-space: nowrap;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .admission-text {
+            animation: moveText 18s linear infinite;
+        }
+
+        @keyframes moveText {
+            from {
+                margin-left: 100%;
+            }
+            to {
+                margin-left: -100%;
+            }
+        }
+
+        .why-choose {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            padding: 40px;
+        }
+
+        .why-text {
+            width: 50%;
+        }
+
+        .why-choose h2 {
+            font-size: 35px;
+        }
+
+        .why-choose span {
+            color: darkred;
+        }
+
+        .why-choose p {
+            color: #333;
+            font-size: 17px;
+            line-height: 1.6;
+        }
+
+        .why-image {
+            width: 50%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 15px;
+            border: 3px solid darkred;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="admissions.html">Admissions</a>
+        <a href="programs.html">Programs</a>
+    </nav>
+
+    <header class="hero">
+
+        <img src="building.webp" alt="University Image">
+
+        <h1>University of Computing & Technology</h1>
+
+    </header>
+
+    <div class="admission-bar">
+
+        <div class="admission-text">
+            ADMISSIONS ARE NOW OPEN FOR SPRING 2027
+        </div>
+
+    </div>
+
+    <section class="why-choose">
+
+        <div class="why-text">
+
+            <h2>Why Choose <span>US?</span></h2>
+
+            <p>
+                Our university provides quality education, experienced teachers and modern facilities.
+                We help students develop practical skills, confidence and knowledge to build a successful future.
+            </p>
+
+        </div>
+
+        <img src="campus.jpg" class="why-image" alt="University Students">
+
+    </section>
+
+    <footer>
+        <p>© Copyright 2026 University of Computing & Technology</p>
+    </footer>
+
+</body>
+</html>

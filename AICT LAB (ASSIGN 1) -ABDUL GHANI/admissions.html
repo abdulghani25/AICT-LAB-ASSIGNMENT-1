@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admissions</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background-color: #eeeeee;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        nav {
+            background-color: darkred;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 15px;
+            text-decoration: none;
+        }
+
+        nav a:hover, button:hover {
+            opacity: 0.6;
+        }
+
+        h1 {
+            color: darkred;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .form-box {
+            background-color: white;
+            width: 50%;
+            margin: 30px auto;
+            padding: 25px;
+            border: 2px solid darkred;
+            border-radius: 10px;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 8px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: darkred;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="admissions.html">Admissions</a>
+        <a href="programs.html">Programs</a>
+    </nav>
+
+    <h1>Admission Inquiry Form</h1>
+
+    <div class="form-box">
+        <form>
+
+            <label>Name:</label>
+            <input type="text" placeholder="Enter your name" required>
+
+            <label>Email:</label>
+            <input type="email" placeholder="Enter your email" required>
+
+            <label>Contact:</label>
+            <input type="tel" placeholder="Enter your contact number" required>
+
+            <label>Gender:</label>
+            <input type="radio" name="gender" value="Male" required> Male
+            <input type="radio" name="gender" value="Female"> Female
+
+            <label>Select Program:</label>
+            <select required>
+                <option value="">Choose a program</option>
+
+                <optgroup label="Biomedical Engineering">
+                    <option>ADP Biocomputing and Artificial Intelligence</option>
+                    <option>ADP Robotics and Intelligent Systems</option>
+                    <option>BS Computer Networks and Security</option>
+                    <option>BS Robotics and Intelligent Systems</option>
+                    <option>BE Biomedical Engineering</option>
+                    <option>BE Technology (Biomedical)</option>
+                    <option>ME Biomedical Engineering</option>
+                    <option>PhD Biomedical Engineering</option>
+                </optgroup>
+
+                <optgroup label="Computer Science">
+                    <option>BS Artificial Intelligence</option>
+                    <option>BS Software Engineering</option>
+                    <option>BS Computer Science</option>
+                    <option>BS Cyber Security</option>
+                    <option>MS Computer Science</option>
+                    <option>PhD Computer Science</option>
+                </optgroup>
+
+                <optgroup label="Biosciences">
+                    <option>BS Human Nutrition and Dietetics</option>
+                    <option>Associate Degree in Biotechnology</option>
+                    <option>BS Food Sciences and Technology</option>
+                    <option>BS Biosciences</option>
+                </optgroup>
+
+                <optgroup label="Business Administration">
+                    <option>BS Fintech</option>
+                    <option>BS Accounting and Finance</option>
+                    <option>BS Supply Chain Management</option>
+                    <option>Bachelor of Business Administration</option>
+                </optgroup>
+
+                <optgroup label="Social Sciences and Humanities">
+                    <option>BS Social Development Studies</option>
+                    <option>BS English</option>
+                    <option>BS Economics with AI and Data Science</option>
+                    <option>BS Psychology</option>
+                </optgroup>
+            </select>
+
+            <button type="button" onclick="welcomeMessage()">Submit</button>
+
+        </form>
+    </div>
+
+    <footer>
+        <p>© Copyright 2026 University of Computing & Technology</p>
+    </footer>
+
+    <script>
+        function welcomeMessage() {
+            alert("Welcome to University of Computing & Technology!");
+        }
+    </script>
+
+</body>
+</html>
